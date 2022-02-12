@@ -1,5 +1,7 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Dense, InputLayer, Conv2D, MaxPool2D, Flatten, BatchNormalization
+from tensorflow.python.keras.layers import Dense, InputLayer, Conv2D, MaxPool2D, Flatten
+from tensorflow.python.keras.layers import BatchNormalization
+
 from datetime import datetime
 
 
@@ -40,7 +42,7 @@ def get_models(_name):
     model = None
     
     if (_name == "dig-s0"):
-        print("Bulilding model")
+        print("Building model")
         model = tf.keras.Sequential()
         model.add(BatchNormalization(input_shape=(32,20,3)))
         model.add(Conv2D(32, (3, 3), padding='same', activation="relu"))
