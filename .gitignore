@@ -1,4 +1,5 @@
 .ipynb_checkpoints
 ziffer_resize/*.jpg
+ziffer_problems_resize/*.jpg
 .DS_Store
 __pycache__
