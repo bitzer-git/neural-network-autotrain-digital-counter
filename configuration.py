@@ -7,8 +7,8 @@ from datetime import datetime
 DateNow = datetime.today().strftime('%Y%m%d')
 TimeNow = datetime.today().strftime('%H%M%S')
 
-#ReportOnly = True             # erzeugt nur den Report wenn aktiviert
-ReportOnly = False
+ReportOnly = True             # erzeugt nur den Report wenn aktiviert
+#ReportOnly = False
 
 #LogFile = None
 LogFile = "a_output_actual/log.txt"
