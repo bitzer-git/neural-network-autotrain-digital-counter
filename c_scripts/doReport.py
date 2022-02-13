@@ -108,7 +108,7 @@ pdf.image(fig2img(fig), x=30, y=10, w=150);
 
 fig, ax = plt.subplots()
 plt.plot(result[1])
-plt.xlabel('number of images')
+plt.ylabel('number of images')
 plt.legend(['date','eval'], loc='upper left')
 
 pdf.image(fig2img(fig), x=30, y=110, w=150);
