@@ -1,9 +1,9 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Autotrain Digital Counter'
+description: 'This action covers the entire process'
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: 'Models and reports'
 runs:
   using: 'docker'
   image: 'c_scripts/Dockerfile'
