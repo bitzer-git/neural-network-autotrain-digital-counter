@@ -4,15 +4,15 @@ on:
       - 'ziffer_raw/**'  
 
 jobs:
-  hello_world_job:
+  Automatic_training_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: autoamtic training job triggered by new image
     steps:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: training action step
         uses: ./ # Uses an action in the root directory
         id: hello
       - name: push changes to remote
