@@ -1,9 +1,9 @@
 on: [workflow_dispatch]
 
 jobs:
-  hello_world_job:
+  manual_training_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Manually triggered training job
     steps:
       # To use this repository's private action,
       # you must check out the repository
@@ -16,7 +16,6 @@ jobs:
         run: |
            git config --global user.name "user mane"
            git config --global user.email "user email"
-           git pull origin
            git add ./ 
            git add ./a_output_actual/
            git add ./b_output_historic/
