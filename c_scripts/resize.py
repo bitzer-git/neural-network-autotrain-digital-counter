@@ -7,7 +7,7 @@ from PIL import Image
 
 
 def empty_directory(_directory):
-    files = glob.glob(_directory + '/*.*')
+    files = glob.glob(_directory + '/*.jpg')
     i = 0
     for f in files:
         os.remove(f)
