@@ -9,13 +9,13 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: run ./action.yml
         uses: ./ # Uses an action in the root directory
         id: hello
       - name: push changes to remote
         run: |
-           git config --global user.name "user mane"
-           git config --global user.email "user email"
+           git config --global user.name "github-actions"
+           git config --global user.email "github-actions@github.com"
            git add ./ 
            git add ./a_output_actual/
            git add ./b_output_historic/
