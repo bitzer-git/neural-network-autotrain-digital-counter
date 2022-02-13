@@ -31,7 +31,7 @@ ZoomRange = 0.2
 
 ### Training Settings
 Batch_Size = 4
-Epoch_Anz  = 100
+Epoch_Anz  = 50
 
 ### CNN-Configuration
 #configurations = ["dig-s3"]
