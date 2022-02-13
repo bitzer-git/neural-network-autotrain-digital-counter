@@ -88,7 +88,7 @@ plt.ylabel('loss');
 plt.xlabel('epoch');
 plt.legend(['train','eval'], loc='upper left');
 
-pdf.image(fig2img(fig), x=30, y=10, w=150);
+pdf.image(fig2img(fig), x=30, y=10, w=120);
 
 
 # In[8]:
@@ -111,7 +111,7 @@ plt.plot(result[1])
 plt.ylabel('number of images')
 plt.legend(['date','eval'], loc='upper left')
 
-pdf.image(fig2img(fig), x=30, y=110, w=150);
+pdf.image(fig2img(fig), x=30, y=110, w=120);
 
 
 # In[10]:
