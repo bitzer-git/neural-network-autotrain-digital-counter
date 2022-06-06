@@ -21,7 +21,7 @@ Epoch_Anz_TrainFine2 = 100
 nb_classes = 11                     # move to 1. step
 input_shape = (32, 20,3)
 ziffer_data_url="ziffer_raw"
-output_dir="a_output_actual"
+output_dir="a_output_actual/"
 
 ##########################################################################
 
@@ -118,7 +118,7 @@ tflite_model = quantization(model=model,
 
 
 # save the model
-filename=TFliteNamingAndVersion + "q.tflite"                                                     
+filename=TFliteNamingAndVersion + "-q.tflite"                                                     
 open(output_dir + filename, "wb").write(tflite_model)
     
 
@@ -132,5 +132,5 @@ pdf.savefig(plot_acc_loss(hist_student1, "1. train Student model"))
 pdf.savefig(plot_acc_loss(hist_teacher2, "Fine-Tune Teacher model"))
 pdf.savefig(plot_acc_loss(hist_student2, "Fine-Tune Student model"))
 pdf.savefig(evaluate_ziffer(distiller.student, ziffer_files, "Student model"))
-pdf.savefig(evaluate_ziffer_tflite(TFliteNamingAndVersion + "q.tflite", ziffer_files, "Quantized TF-Lite-Model"))
+pdf.savefig(evaluate_ziffer_tflite(TFliteNamingAndVersion + "-q.tflite", ziffer_files, "Quantized TF-Lite-Model"))
 pdf.close()
