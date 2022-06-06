@@ -120,6 +120,7 @@ tflite_model = quantization(model=model,
 # save the model
 filename=TFliteNamingAndVersion + "-q.tflite"                                                     
 open(output_dir + filename, "wb").write(tflite_model)
+print("Saved model path: ", output_dir + filename)
     
 
 #  repoting
@@ -132,5 +133,6 @@ pdf.savefig(plot_acc_loss(hist_student1, "1. train Student model"))
 pdf.savefig(plot_acc_loss(hist_teacher2, "Fine-Tune Teacher model"))
 pdf.savefig(plot_acc_loss(hist_student2, "Fine-Tune Student model"))
 pdf.savefig(evaluate_ziffer(distiller.student, ziffer_files, "Student model"))
+print("Load model path: ", TFliteNamingAndVersion + "-q.tflite")
 pdf.savefig(evaluate_ziffer_tflite(TFliteNamingAndVersion + "-q.tflite", ziffer_files, "Quantized TF-Lite-Model"))
 pdf.close()
