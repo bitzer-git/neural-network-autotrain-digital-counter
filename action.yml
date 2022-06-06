@@ -6,4 +6,4 @@ outputs:
     description: 'Models and reports'
 runs:
   using: 'docker'
-  image: 'd_scripts/Dockerfile'
+  image: 'd_scripts_effnet/Dockerfile'
